@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BxTemplate</string>
+    <string name="hello_world">Lesson1</string>
+    <string name="string_default">Lesson1</string>
+</resources>
