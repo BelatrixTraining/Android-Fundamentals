@@ -1,8 +1,9 @@
 # Android-Fundamentals
 Android Fundamentals (20h)
-
-## RecyclerView y Adapters (4h)
- 
-  - Basic Adapters
   
-  - Custom Adapters
+## User Interface(4h)
+
+ - Layout y Widgets
+ 
+ - Eventos de Usuario
+    
