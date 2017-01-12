@@ -1,10 +1,7 @@
 # Android-Fundamentals
 Android Fundamentals (20h)
 
-## Android Studio (2h)
-    
-   - Gradle
-   
-   - Android Studio
+## Fundamentos (2h)
   
- 
+  - Activity, Services, Broadcast Receiver, Content Providers
+     
