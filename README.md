@@ -36,11 +36,11 @@ Es un componente que permite a la aplicacion seguir corriendo en background (no 
 Su mayor diferencia es que el primero le indica al sistema que lo deje seguir corriendo hasta terminar su trabajo mientras que el segundo se mantendra vivo mientras que haya uno o mas componentes suscritos a el. 
 Un service es implementado como una subclase de Service.
 
-###Qué es un Broadcast Receiver?
+####Qué es un Broadcast Receiver?
 Es un componente que permite al sistema entregar eventos fuera del flujo tradicional de interaccion con el usuario tales como estado de la bateria, estado de la conexión o si es que la pantalla ha sido apagada. Una aplicacion también puede iniciar un broadcast para de esta manera anunciar a otras aplicaciones algún evento en específico. Un broadcast receiver es capaz de crear una notificacion en la barra de estado para indicar al usuario un evento. 
 Un broadcast receiver es implementado como una subclase de BroadcastReceiver.
 
-###Qué es un Content Provider?
+####Qué es un Content Provider?
 A través de un content provider otras aplicaciones pueden leer y modificar (si es que el CP lo permite) data de tu aplicación. Un ejemplo muy usado es el content provider usado para leer los contactos del usuario desde alguna aplicacion (con los debidos permisos) e incluso modificar o agregar data a ellos. 
 Content providers también son muy usados para manejar la data **privada** de tu aplicación.
 Para implementar un content provider es necesario hacerlo como una subclase de ContentProvider.
@@ -66,7 +66,7 @@ Para ver que otro tipos de recursos se pueden manejar en una aplicación revisar
 Los layouts se almacenan dentro del directorio **layout** dentro de res.
 
  1. Crear una carpeta dentro del directorio **res** llamada layout-land
-![landscapeDirectory](https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson1/images/manageLandscapeDirectory.png)
+![Land directory](https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson1/images/manageLandscapeDirectory.png)
  2. Crear un archivo xml (layout) llamado de **igual manera** que nuestro archivo base.
 ![landscapeFile](https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson1/images/landscape%20file.png)
  3. Setear el layout a la actividad
