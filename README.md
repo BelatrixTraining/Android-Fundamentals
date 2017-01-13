@@ -65,7 +65,7 @@ Para ver que otro tipos de recursos se pueden manejar en una aplicación revisar
 ###Manejar distintas orientaciones 
 Los layouts se almacenan dentro del directorio **layout** dentro de res.
 
- 1. Crear una carpeta dentro del directorio **res** llamada layout-land
+ 1. Crear una carpeta dentro del directorio **res** llamada layout-land.
 ![Land directory](https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson1/images/manageLandscapeDirectory.png)
  2. Crear un archivo xml (layout) llamado de **igual manera** que nuestro archivo base.
 ![landscapeFile](https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson1/images/landscape%20file.png)
