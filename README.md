@@ -14,12 +14,16 @@ Cada uno de ellos tiene un proposito distinto y un ciclo de vida diferente que e
 Un activity es el punto de entrada de la interaccion con el usuario. Esta representa un sola pantalla aunque con el uso de **fragmentos** se puede tener mas de una pantalla por actividad.
 Una activity es implementada como una subclase de Activity.
 
+<img src="https://developer.android.com/guide/components/images/activity_lifecycle.png"/>
+
 ####Ejemplo de activity
 
 ####Qué es un Service?
 Es un componente que permite a la aplicacion seguir corriendo en background (no estar visible). Un servicio no provee una interfaz de usuario y suele usarse para tareas prolongadas. Existen dos tipos de Services: **Started** y **Bound** Services.
 Su mayor diferencia es que el primero le indica al sistema que lo deje seguir corriendo hasta terminar su trabajo mientras que el segundo se mantendra vivo mientras que haya uno o mas componentes suscritos a el. 
 Un service es implementado como una subclase de Service.
+
+<img src="https://developer.android.com/images/service_lifecycle.png"/>
 
 ####Ejemplo de service
 
@@ -34,4 +38,17 @@ A través de un content provider otras aplicaciones pueden leer y modificar (si 
 Content providers también son muy usados para manejar la data **privada** de tu aplicación.
 Para implementar un content provider es necesario hacerlo como una subclase de ContentProvider.
 
+<img src="https://developer.android.com/guide/topics/providers/images/content-provider-overview.png" />
+
 ####Ejemplo de Content Provider
+
+####Referencias
+
+- https://developer.android.com/guide/components/activities/intro-activities.html
+- https://developer.android.com/guide/components/activities/activity-lifecycle.html
+- https://developer.android.com/guide/components/broadcasts.html 
+- https://developer.android.com/guide/topics/providers/content-providers.html
+- https://developer.android.com/guide/components/services.html
+
+
+
