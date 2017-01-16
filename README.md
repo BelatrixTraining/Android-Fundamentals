@@ -273,6 +273,6 @@ public class ExampleProvider extends ContentProvider {
 - https://developer.android.com/guide/components/broadcasts.html 
 - https://developer.android.com/guide/topics/providers/content-providers.html
 - https://developer.android.com/guide/components/services.html
-
+- https://github.com/cpinan/AndroidNanodegree/blob/master/SuperDuo/alexandria/app/src/main/java/it/jaschke/alexandria/data/AlexandriaContract.java
 
 
