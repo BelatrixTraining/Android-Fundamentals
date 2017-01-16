@@ -34,3 +34,5 @@ Android Fundamentals (20h)
 ## Referencias
  
  - Android Studio [https://developer.android.com/studio/intro/index.html](https://developer.android.com/studio/intro/index.html)
+ 
+ - Android Studio Project Site [http://tools.android.com/tips](http://tools.android.com/tips)
