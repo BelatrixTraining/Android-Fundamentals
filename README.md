@@ -14,6 +14,16 @@ Cada uno de ellos tiene un proposito distinto y un ciclo de vida diferente que e
 Un activity es el punto de entrada de la interaccion con el usuario. Esta representa un sola pantalla aunque con el uso de **fragmentos** se puede tener mas de una pantalla por actividad.
 Una activity es implementada como una subclase de Activity.
 
+```
+<activity android:name=".ExampleActivity" android:icon="@drawable/app_icon">
+    <intent-filter>
+        <action android:name="android.intent.action.SEND" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <data android:mimeType="text/plain" />
+    </intent-filter>
+<activity>
+```
+
 <img src="https://developer.android.com/guide/components/images/activity_lifecycle.png"/>
 
 ####Ejemplo de activity
