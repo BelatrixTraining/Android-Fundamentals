@@ -278,8 +278,13 @@ public class ExampleProvider extends ContentProvider {
 ####Ejercicios
 
 1. Crear un flujo de actividades, por lo menos 5 actividades para navegar entre ellas.
+- A. Tenga imagenes (10 imagenes)
+- B. Tap a cualquier imagen te manda a activity B que tiene textos y 3 botones.
+- C. 3 botones te manda a actividad C D y E
 
-2. Siguiendo los conceptos de la clase pasada, armar una galería, en una actividad tendras varias imagenes (no es necesario usar adaptadores ya que aun no se ha visto) y al darle click te mandara a una nueva actividad.
+2. Van a crear un activity que ejecute un servicio y devuelva un mensaje a través de un broadcast receiver.
+
+3. Van a hacer un ejemplo sobre content provider ademas de un ejemplo con service y descarga archivos.
 
 ####Referencias
 
