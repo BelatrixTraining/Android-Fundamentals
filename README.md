@@ -269,7 +269,7 @@ public class ExampleProvider extends ContentProvider {
 
 1. Crear un flujo de actividades, por lo menos 5 actividades para navegar entre ellas.
 
-2. Siguiendo los conceptos de la clase pasada, armar una galería, también siguiendo los conceptos de esta clase intenta implementar un intent service y un broadcast receiver.
+2. Siguiendo los conceptos de la clase pasada, armar una galería, en una actividad tendras varias imagenes (no es necesario usar adaptadores ya que aun no se ha visto) y al darle click te mandara a una nueva actividad.
 
 ####Referencias
 
