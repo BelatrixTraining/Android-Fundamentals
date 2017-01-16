@@ -265,6 +265,11 @@ public class ExampleProvider extends ContentProvider {
 }
 
 ```
+####Ejercicios
+
+1. Crear un flujo de actividades, por lo menos 5 actividades para navegar entre ellas.
+
+2. Siguiendo los conceptos de la clase pasada, armar una galería, también siguiendo los conceptos de esta clase intenta implementar un intent service y un broadcast receiver.
 
 ####Referencias
 
@@ -274,5 +279,4 @@ public class ExampleProvider extends ContentProvider {
 - https://developer.android.com/guide/topics/providers/content-providers.html
 - https://developer.android.com/guide/components/services.html
 - https://github.com/cpinan/AndroidNanodegree/blob/master/SuperDuo/alexandria/app/src/main/java/it/jaschke/alexandria/data/AlexandriaContract.java
-
-
+- http://android.inspired-ui.com/
