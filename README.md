@@ -125,14 +125,16 @@ Padding
     <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout_weight_hor_sample.png" height="480">
    
 - RelativeLayout 
- 
+
+   <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/relativelayout_alignment.png" height="480">
+
 - Ejemplos de maquetación
     
     <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/login_sample.png" height="480">
     <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/login_sample_xml.png" height="480">
 
     <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/layout_sample1.png" height="480">
-    <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/layout_sample1.png" height="480">
+    <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/layout_sample2.png" height="480">
 
     <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/layout_sample3.png" height="480">
     <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/layout_sample4.png" height="480">
