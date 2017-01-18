@@ -36,3 +36,13 @@ Android Fundamentals (20h)
  - Android Studio [https://developer.android.com/studio/intro/index.html](https://developer.android.com/studio/intro/index.html)
  
  - Android Studio Project Site [http://tools.android.com/tips](http://tools.android.com/tips)
+
+- Introduction to Android Studio [https://www.youtube.com/watch?v=K2dodTXARqc](https://www.youtube.com/watch?v=K2dodTXARqc)
+
+- Introducing Gradle [https://www.youtube.com/watch?v=cD7NPxuuXYY&t=53s](https://www.youtube.com/watch?v=cD7NPxuuXYY&t=53s)
+
+- Gradle Please [http://gradleplease.appspot.com/](http://gradleplease.appspot.com/)
+
+
+
+

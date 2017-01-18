@@ -1,0 +1,96 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.bx.android"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+/*
+android{
+
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.bx.android"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    //
+    // Product Flavors
+    //
+    productFlavors {
+
+        devel{
+            applicationId "com.emedinaa.multipleflavors"
+        }
+
+        prod{
+            applicationId "com.emedinaa.multipleflavors"
+        }
+    }
+}*/
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:cardview-v7:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+
+
+     // Agregar un nuevas dependencias
+
+     // http://square.github.io/picasso/
+
+     // https://square.github.io/retrofit/
+
+     // http://jakewharton.github.io/butterknife/
+     //
+
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+
+}
+
+/*
+dependencies{
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+
+    compile "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    compile "com.android.support:support-v4:$rootProject.supportLibraryVersion"
+    compile "com.android.support:design:$rootProject.supportLibraryVersion"
+    compile "com.android.support:cardview-v7:$rootProject.supportLibraryVersion"
+    compile "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion"
+
+    //
+    //    Modules
+     //
+    compile project(':mymoduleandroid')
+}*/
+
