@@ -9,16 +9,18 @@ Android Fundamentals (20h)
 
 ## Layouts y Widgets
 
-    - Layouts
+- Fundamentos
 
-    - Input Controls (Widgets)
-    
-    - Material Design
-        
+- Layouts
+
+- Ejemplos Layout
+
+- Widgets
+
 
 ### Fundamentos
 
-  - Estructura de un elemento XML :
+- Estructura de un elemento XML :
   
 ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -34,7 +36,7 @@ Android Fundamentals (20h)
     </RelativeLayout>
 ```
 
-  - ID :
+- ID :
   
 ```xml
       android:id="@+id/img"
@@ -49,13 +51,13 @@ Android Fundamentals (20h)
             android:textAppearance="?android:attr/textAppearanceMedium" />
 ```
     
-  - Atributos :
+- Atributos :
     
 ```xml
         android:layout_width="300dp"
 ```
     
-  - En el código podemos invocar a los elementos XML de la siguiente manera :
+- En el código podemos invocar a los elementos XML de la siguiente manera :
   
 ```xml
       @Override
@@ -75,6 +77,15 @@ Android Fundamentals (20h)
      txtImg = (TextView)findViewById(R.id.txtImg);
 ```
 
+- Módelo de Caja :
+
+Margin
+
+<img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/boxmodel_margin.png" height="480">
+
+Padding
+
+<img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/boxmodel_padding.png" height="480">
 
 ### Layouts
 
@@ -92,17 +103,16 @@ Android Fundamentals (20h)
     <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/listview.png" height="480">
     
     <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/gridview.png" height="480">
-  
-* Ejemplos
+
+
+### Ejemplos Layout
 
 - LinearLayout
     
     <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout_sample.png" height="480">
-
     <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout_horz_sample.png" height="480">
     
     <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout_weight_ver_sample.png" height="480">
-    
     <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout_weight_hor_sample.png" height="480">
     
 - Login Sample
