@@ -89,6 +89,13 @@ Padding
 
 ### Widgets
 
+- Input Controls [controls](https://developer.android.com/guide/topics/ui/controls.html)
+
+<img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/widgets.png" height="480">
+
+- Material Components [material](https://material.io/guidelines/components/bottom-navigation.html)
+
+
 ### Layouts
 
   
