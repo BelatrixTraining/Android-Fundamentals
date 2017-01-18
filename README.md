@@ -3,19 +3,19 @@ Android Fundamentals (20h)
   
 ## User Interface(4h)
 
- - Layout y Widgets
+ - Layout y Widgets (2h)
  
- - Eventos de Usuario
+ - Eventos de Usuario (2h)
 
 ## Layouts y Widgets
 
 - Fundamentos
 
+- Widgets
+
 - Layouts
 
-- Ejemplos Layout
-
-- Widgets
+- Ejemplos
 
 
 ### Fundamentos
@@ -87,6 +87,8 @@ Padding
 
 <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/boxmodel_padding.png" height="480">
 
+### Widgets
+
 ### Layouts
 
   
@@ -105,7 +107,7 @@ Padding
     <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/gridview.png" height="480">
 
 
-### Ejemplos Layout
+### Ejemplos
 
 - LinearLayout
     
@@ -114,11 +116,27 @@ Padding
     
     <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout_weight_ver_sample.png" height="480">
     <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout_weight_hor_sample.png" height="480">
-    
-- Login Sample
+   
+- RelativeLayout 
+ 
+- Ejemplos de maquetación
     
     <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/login_sample.png" height="480">
     <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/login_sample_xml.png" height="480">
+
+    <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/layout_sample1.png" height="480">
+    <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/layout_sample1.png" height="480">
+
+    <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/layout_sample3.png" height="480">
+    <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/layout_sample4.png" height="480">
+
+    <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/layout_sample5.png" height="480">
+    <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/layout_sample6.png" height="480">
+
+    <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/layout_sample7.png" height="480">
+    <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/layout_sample8.png" height="480">
+
+    <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/layout_sample8.png" height="480">
 
 
 Referencias :
