@@ -1,7 +1,7 @@
 # Android-Fundamentals
 Android Fundamentals (20h)
 
- - Lesson 1 
+ - Lesson 1 , 2
     
     Fundamentos (4h)
     
@@ -9,7 +9,7 @@ Android Fundamentals (20h)
 
     * Activity, Services, Broadcast Receiver, Content Providers
      
- - Lesson 2
+ - Lesson 3
  
     Android Studio (2h)
     
@@ -17,7 +17,7 @@ Android Fundamentals (20h)
 
     * Android Studio
   
- - Lesson 3
+ - Lesson 4, 4-2
  
     User Interface(4h)
  
@@ -25,7 +25,7 @@ Android Fundamentals (20h)
 
     * Eventos de Usuario
     
- - Lesson 4
+ - Lesson 5, 5-2
     
     RecyclerView y Adapters (4h)
  
@@ -33,14 +33,14 @@ Android Fundamentals (20h)
     
     * Custom Adapters
     
- - Lesson 5
+ - Lesson 6, 6-2
    
    Fragments Fundamentos (3h)
  
- - Lesson 6
+ - Lesson 7
    
    Notificaciones (2h)
  
- - Lesson 7
+ - Lesson 8
    
    Presentaciòn de Proyectos I (1h)
