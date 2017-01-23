@@ -5,7 +5,7 @@ Android Fundamentals (20h)
 Eventos centrados en el objeto `View`  
 
 ### View Events
-Todo View, ya sea Button, ImageView, TextView, etc, posee varios *event listeners* que pueden ser usados gracias al patrón `setOnEvent` el cual implica pasar una clase que implemente una interface de un evento en particular. Los listeners disponibles para cualquier `View` son los siguientes:
+Todo `View`, ya sea `Button`, `ImageView`, `TextView`, etc, posee varios *event listeners* que pueden ser usados gracias al patrón `setOnEvent` el cual implica pasar una clase que implemente una interface de un evento en particular. Los listeners disponibles para cualquier `View` son los siguientes:
 
  * `setOnClickListener` - Callback cuando la vista es clickeada.
  * `setOnDragListener` - Callback cuando la vista es arrastrada.
@@ -148,6 +148,9 @@ Implementar una pantalla de login en donde se tenga las siguientes consideracion
  5. Button Login, el botón login debe realizar una navegación hacia una nueva pantalla si es que ha cumplido con las condiciones anteriores.
 
 Tip: Usar regex para validar los campos.
+
+Imagen referencial: 
+![imagen ejercicio](https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4-2/images/ejercicio.jpg)
 
 ## Referencias
 
