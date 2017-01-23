@@ -7,5 +7,8 @@
     <string name="click_events">Click Events</string>
     <string name="items_events">Items Events</string>
     <string name="keyboard_events">Keyboard Events</string>
+    <string name="login">Login</string>
+    <string name="usuarioHint">Usuario</string>
+    <string name="passwordHint">Clave</string>
     <string name="loginExample">Login Example</string>
 </resources>

@@ -15,11 +15,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".ItemsEventsActivity" />
         <activity android:name=".KeyboardEventsActivity" />
         <activity android:name=".BasicEventsActivity" />
-
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".LandingActivity"></activity>
     </application>
 
 </manifest>
