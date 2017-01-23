@@ -48,4 +48,8 @@ public class MainActivity extends AppCompatActivity {
     private void gotoKeyboardEvents() {
         startActivity(new Intent(this, KeyboardEventsActivity.class));
     }
+
+    public void goToLogin(View view) {
+        
+    }
 }

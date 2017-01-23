@@ -29,10 +29,10 @@
         android:text="@string/keyboard_events" />
 
     <Button
-        android:id="@+id/btnForm"
+        android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
-        android:text="@string/form_example"
-        android:onClick="gotoForm"/>
+        android:text="@string/loginExample"
+        android:onClick="goToLogin"/>
 </LinearLayout>
