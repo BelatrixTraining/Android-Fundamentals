@@ -22,13 +22,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.btnForm).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                gotoForm();
-            }
-        });
-
         findViewById(R.id.btnItems).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,18 +38,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void gotoBasicEvents() {
-        startActivity(new Intent(this,BasicEventsActivity.class));
+        startActivity(new Intent(this, BasicEventsActivity.class));
     }
 
     private void gotoItemsEvents() {
-        startActivity(new Intent(this,ItemsEventsActivity.class));
-    }
-
-    private void gotoForm() {
-        startActivity(new Intent(this,FormularioActivity.class));
+        startActivity(new Intent(this, ItemsEventsActivity.class));
     }
 
     private void gotoKeyboardEvents() {
-        startActivity(new Intent(this,KeyboardEventsActivity.class));
+        startActivity(new Intent(this, KeyboardEventsActivity.class));
     }
 }

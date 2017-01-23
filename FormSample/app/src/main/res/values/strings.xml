@@ -4,4 +4,8 @@
     <string name="hello_world">L06Form</string>
     <string name="seleccionar">Seleccionar</string>
     <string name="sign_up">Sign Up</string>
+    <string name="click_events">Click Events</string>
+    <string name="items_events">Items Events</string>
+    <string name="keyboard_events">Keyboard Events</string>
+    <string name="form_example">Form Example</string>
 </resources>

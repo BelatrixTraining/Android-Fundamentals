@@ -10,11 +10,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class BasicEventsActivity extends Activity implements View.OnClickListener{
+public class BasicEventsActivity extends Activity implements View.OnClickListener {
 
-    private  Button btn;
+    private Button btn;
     private ImageView ivi;
-    private  FrameLayout flay;
+    private FrameLayout flay;
     private TextView tvi;
 
     @Override
@@ -25,10 +25,10 @@ public class BasicEventsActivity extends Activity implements View.OnClickListene
     }
 
     private void ui() {
-        btn= (Button)findViewById(R.id.btn);
-        ivi= (ImageView) findViewById(R.id.ivi);
-        flay= (FrameLayout) findViewById(R.id.flay);
-        tvi= (TextView) findViewById(R.id.tvi);
+        btn = (Button) findViewById(R.id.btn);
+        ivi = (ImageView) findViewById(R.id.ivi);
+        flay = (FrameLayout) findViewById(R.id.flay);
+        tvi = (TextView) findViewById(R.id.tvi);
 
         btn.setOnClickListener(this);
         ivi.setOnClickListener(this);
@@ -40,28 +40,28 @@ public class BasicEventsActivity extends Activity implements View.OnClickListene
     @Override
     public void onClick(View v) {
 
-        String message= null;
-        switch (v.getId()){
+        String message = null;
+        switch (v.getId()) {
             case R.id.btn:
-                    message= "BUTTON";
+                message = "BUTTON";
                 break;
             case R.id.ivi:
-                    message= "IMAGEVIEW";
+                message = "IMAGEVIEW";
                 break;
             case R.id.flay:
-                    message= "FRAMELAYOUT";
+                message = "FRAMELAYOUT";
                 break;
             case R.id.tvi:
-                    message= "TEXTVIEW";
+                message = "TEXTVIEW";
                 break;
         }
 
-        if(message!=null)
+        if (message != null)
             showMessage(message);
     }
 
     private void showMessage(String message) {
-        Toast.makeText(this,message,Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 
 

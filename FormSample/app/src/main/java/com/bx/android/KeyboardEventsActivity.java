@@ -2,6 +2,7 @@ package com.bx.android;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.PatternMatcher;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -20,6 +21,7 @@ public class KeyboardEventsActivity extends Activity {
     private EditText eteEmail;
     private EditText etePassword;
     private Button btnSignUp;
+    private final String PASSWORD_REGEX_PATTERN = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[$@$!%*?&])[A-Za-z\\d$@$!%*?&]{8,}";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,26 +31,27 @@ public class KeyboardEventsActivity extends Activity {
     }
 
     private void ui() {
-        eteUsername= (EditText)findViewById(R.id.eteUsername);
-        eteEmail= (EditText)findViewById(R.id.eteEmail);
-        etePassword= (EditText)findViewById(R.id.etePassword);
-        btnSignUp= (Button) findViewById(R.id.btnSignUp);
+        eteUsername = (EditText) findViewById(R.id.eteUsername);
+        eteEmail = (EditText) findViewById(R.id.eteEmail);
+        etePassword = (EditText) findViewById(R.id.etePassword);
+        btnSignUp = (Button) findViewById(R.id.btnSignUp);
 
         //events
         eteUsername.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                Log.v("CONSOLE", "beforeTextChanged "+s.toString());
+                Log.v("CONSOLE", "beforeTextChanged " + s.toString());
+
             }
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                Log.v("CONSOLE", "onTextChanged "+s.toString());
+                Log.v("CONSOLE", "onTextChanged " + s.toString());
             }
 
             @Override
             public void afterTextChanged(Editable s) {
-                Log.v("CONSOLE", "afterTextChanged "+s.toString());
+                Log.v("CONSOLE", "afterTextChanged " + s.toString());
             }
         });
 
@@ -72,9 +75,9 @@ public class KeyboardEventsActivity extends Activity {
         etePassword.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                if(event!=null){
-                    Log.v("CONSOLE ","keycode "+event.getKeyCode()+
-                    " actionId "+actionId);
+                if (event != null) {
+                    Log.v("CONSOLE ", "keycode " + event.getKeyCode() +
+                            " actionId " + actionId);
                 }
 
                 if ((event != null && (event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) || (actionId == EditorInfo.IME_ACTION_DONE)) {
@@ -104,6 +107,6 @@ public class KeyboardEventsActivity extends Activity {
     }
 
     private void send() {
-        Toast.makeText(this, "Send server... ",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Send server... ", Toast.LENGTH_SHORT).show();
     }
 }

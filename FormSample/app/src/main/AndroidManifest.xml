@@ -19,7 +19,6 @@
         <activity android:name=".ItemsEventsActivity" />
         <activity android:name=".KeyboardEventsActivity" />
         <activity android:name=".BasicEventsActivity" />
-        <activity android:name=".FormularioActivity"/>
 
     </application>
 

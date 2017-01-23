@@ -3,34 +3,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center"
+    android:orientation="vertical"
     android:padding="10dp">
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Click Events"
-        android:layout_marginBottom="5dp"
-        android:id="@+id/btnClick"/>
 
     <Button
+        android:id="@+id/btnClick"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Items Events"
         android:layout_marginBottom="5dp"
-        android:id="@+id/btnItems"/>
+        android:text="@string/click_events" />
 
     <Button
+        android:id="@+id/btnItems"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Keyboard Events"
         android:layout_marginBottom="5dp"
-        android:id="@+id/btnKeyboard"/>
+        android:text="@string/items_events" />
 
     <Button
+        android:id="@+id/btnKeyboard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Form Example"
         android:layout_marginBottom="5dp"
-        android:id="@+id/btnForm"/>
+        android:text="@string/keyboard_events" />
+
+    <Button
+        android:id="@+id/btnForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/form_example"
+        android:onClick="gotoForm"/>
 </LinearLayout>

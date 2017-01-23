@@ -21,7 +21,7 @@ public class ItemsEventsActivity extends Activity {
     }
 
     private void ui() {
-        spLocation =(Spinner)findViewById(R.id.spLocation);
+        spLocation = (Spinner) findViewById(R.id.spLocation);
 
 
         spLocation.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -30,7 +30,7 @@ public class ItemsEventsActivity extends Activity {
                 Log.v("CONSOLE", "spLocation" + adapterView.getAdapter().getItem(i));
                 localidad = adapterView.getAdapter().getItem(i).toString();
                 Toast.makeText(ItemsEventsActivity.this,
-                        "Item seleccionado "+localidad,Toast.LENGTH_SHORT).show();
+                        "Item seleccionado " + localidad, Toast.LENGTH_SHORT).show();
             }
 
             @Override
