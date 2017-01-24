@@ -3,9 +3,9 @@ Android Fundamentals (20h)
     
 RecyclerView y Adapters (4h)
  
-    * Basic Adapters
+   * Basic Adapters
     
-    * Custom Adapters
+   * Custom Adapters
     
 
 ListView and GridView
@@ -22,9 +22,11 @@ Design
 
 Components
     
-        * DataSource
-        * Adapter
-        * View
+   * DataSource
+        
+   * Adapter
+        
+   * View
         
 ![](https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson5-2/images/androidAdapter.png)
 
@@ -32,9 +34,12 @@ Components
 Adapter & Custom Adapters
  
   - Adapters
-        * Cursor Adapter
-        * Array Adapter
-        * Base Adapter
+  
+      * Cursor Adapter
+       
+      * Array Adapter
+        
+      * Base Adapter
             
   - Structure
     
