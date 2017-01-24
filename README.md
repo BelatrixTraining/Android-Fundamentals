@@ -10,14 +10,14 @@ RecyclerView y Adapters (4h)
 
 ListView and GridView
     
-      ![](https://developer.android.com/images/ui/listview.png) ![](https://developer.android.com/images/ui/gridview.png)
+![](https://developer.android.com/images/ui/listview.png) ![](https://developer.android.com/images/ui/gridview.png)
           
 
 Design 
     
-        * Galleries [http://android.inspired-ui.com/tagged/galleries](http://android.inspired-ui.com/tagged/galleries)
+* Galleries [http://android.inspired-ui.com/tagged/galleries](http://android.inspired-ui.com/tagged/galleries)
         
-        * Lists [http://android.inspired-ui.com/tagged/lists](http://android.inspired-ui.com/tagged/lists)
+* Lists [http://android.inspired-ui.com/tagged/lists](http://android.inspired-ui.com/tagged/lists)
         
 
 Components
@@ -26,27 +26,31 @@ Components
         * Adapter
         * View
         
-        ![](https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson5-2/images/androidAdapter.png)
+![](https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson5-2/images/androidAdapter.png)
 
 
 Adapter & Custom Adapters
  
-    - Adapters
+  - Adapters
         * Cursor Adapter
         * Array Adapter
         * Base Adapter
             
-    - Structure
+  - Structure
     
-        BaseAdapter [link](https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson5-2/ADAPTER.md)
+      BaseAdapter [link](https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson5-2/ADAPTER.md)
         
-    - Steps 
+  - Steps 
     
-        * 1. Create model (Entity Class)
-        * 2. Get Data source (List , ArrayList)
-        * 3. Create row.xml
-        * 4. Create adapter
-        * 5. Set Adapter to View (ListView, GridView)
+    * 1. Create model (Entity Class)
+    
+    * 2. Get Data source (List , ArrayList)
+    
+    * 3. Create row.xml
+    
+    * 4. Create adapter
+    
+    * 5. Set Adapter to View (ListView, GridView)
 
 
 Patrón ViewHolder
@@ -102,8 +106,13 @@ Eventos
 Referencias :
 
    - [https://developer.android.com/guide/topics/ui/layout/listview.html](https://developer.android.com/guide/topics/ui/layout/listview.html)
+   
    - [https://developer.android.com/guide/topics/ui/layout/gridview.html](https://developer.android.com/guide/topics/ui/layout/gridview.html)
+   
    - [https://developer.android.com/guide/topics/ui/controls/spinner.html](https://developer.android.com/guide/topics/ui/controls/spinner.html)
+   
    - [https://developer.android.com/guide/topics/ui/declaring-layout.html](https://developer.android.com/guide/topics/ui/declaring-layout.html)
+   
    - [https://developer.android.com/training/improving-layouts/smooth-scrolling.html](https://developer.android.com/training/improving-layouts/smooth-scrolling.html)
+   
    - [https://sriramramani.wordpress.com/2012/07/25/infamous-viewholder-pattern/](https://sriramramani.wordpress.com/2012/07/25/infamous-viewholder-pattern/)
