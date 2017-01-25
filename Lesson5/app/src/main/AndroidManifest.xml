@@ -15,7 +15,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BaseAdapterActivity"></activity>
+        <activity android:name=".baseadapter.BaseAdapterActivity"></activity>
     </application>
 
 </manifest>

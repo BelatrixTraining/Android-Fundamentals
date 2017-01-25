@@ -9,10 +9,27 @@
     </string-array>
 
     <string-array name="activities">
-        <item>.BaseAdapterActivity</item>
+        <item>.baseadapter.BaseAdapterActivity</item>
         <item>.ArrayAdapter</item>
         <item>.SimpleAdapter</item>
         <item>.CursorAdapter</item>
         <item>.SpinnerAdapter</item>
+    </string-array>
+
+    <string-array name="lorem">
+        <item>uno</item>
+        <item>dos</item>
+        <item>tres</item>
+        <item>cuatro</item>
+        <item>cinco</item>
+        <item>seis</item>
+        <item>siete</item>
+        <item>ocho</item>
+        <item>nueve</item>
+        <item>diez</item>
+        <item>once</item>
+        <item>doce</item>
+        <item>trece</item>
+        <item>catorce</item>
     </string-array>
 </resources>
