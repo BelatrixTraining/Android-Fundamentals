@@ -4,4 +4,5 @@
     <string name="viewHolderTitle">View Holder Example</string>
     <string name="arrayAdapterTitle">Array Adapter Example</string>
     <string name="cursorAdapterTitle">Cursor Adapter Example</string>
+    <string name="simpleAdapterTitle">Simple Adapter Example</string>
 </resources>

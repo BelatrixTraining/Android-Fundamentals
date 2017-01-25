@@ -12,7 +12,7 @@
     <string-array name="activities">
         <item>.baseadapter.BaseAdapterActivity</item>
         <item>.arrayAdapter.ArrayAdapterActivity</item>
-        <item>.SimpleAdapterActivity</item>
+        <item>.simpleadapter.SimpleAdapterActivity</item>
         <item>.cursoradapter.CursorAdapterActivity</item>
         <item>.viewholder.ViewHolderActivity</item>
         <item>.SpinnerAdapterActivity</item>
@@ -33,5 +33,29 @@
         <item>doce</item>
         <item>trece</item>
         <item>catorce</item>
+    </string-array>
+    <string-array name="countries">
+        <item>Peru</item>
+        <item>Argentina</item>
+        <item>Bolivia</item>
+        <item>Chile</item>
+        <item>Ecuador</item>
+        <item>Brazil</item>
+        <item>Colombia</item>
+        <item>Venezuela</item>
+        <item>Uruguay</item>
+        <item>Paraguay</item>
+    </string-array>
+    <string-array name="capitals">
+        <item>Lima</item>
+        <item>Buenos Aires</item>
+        <item>Sucre</item>
+        <item>Santiago</item>
+        <item>Quito</item>
+        <item>Brasilia</item>
+        <item>Bogota</item>
+        <item>Caracas</item>
+        <item>Montevideo</item>
+        <item>Asuncion</item>
     </string-array>
 </resources>
