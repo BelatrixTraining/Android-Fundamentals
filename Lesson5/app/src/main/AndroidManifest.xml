@@ -15,8 +15,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".baseadapter.BaseAdapterActivity"></activity>
-        <activity android:name=".viewholder.ViewHolderActivity"></activity>
+        <activity android:name=".baseadapter.BaseAdapterActivity" />
+        <activity android:name=".viewholder.ViewHolderActivity" />
+        <activity android:name=".arrayAdapter.ArrayAdapterActivity" />
     </application>
 
 </manifest>

@@ -11,11 +11,11 @@
 
     <string-array name="activities">
         <item>.baseadapter.BaseAdapterActivity</item>
-        <item>.ArrayAdapter</item>
-        <item>.SimpleAdapter</item>
-        <item>.CursorAdapter</item>
+        <item>.arrayAdapter.ArrayAdapterActivity</item>
+        <item>.SimpleAdapterActivity</item>
+        <item>.CursorAdapterActivity</item>
         <item>.viewholder.ViewHolderActivity</item>
-        <item>.SpinnerAdapter</item>
+        <item>.SpinnerAdapterActivity</item>
     </string-array>
 
     <string-array name="lorem">
