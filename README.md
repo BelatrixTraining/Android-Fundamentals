@@ -74,7 +74,6 @@ public class UsuarioAdapter extends CursorAdapter {
       
       String nombre = cursor.getString(cursor.getColumnIndexOrThrow("nombre"));
       String apellido = cursor.getString(cursor.getColumnIndexOrThrow("apellido"));
-      // Populate fields with extracted properties
       nombreView.setText(nombre);
       apellidoView.setText(apellido);
   }
@@ -86,6 +85,97 @@ public class UsuarioAdapter extends CursorAdapter {
 ListView listView = (ListView) findViewById(R.id.listView);
 UsuarioAdapter usuarioAdapter = new UsuarioAdapter(this, usuarioCursor);
 listView.setAdapter(usuarioAdapter);
+```
+
+###Implementando un BaseAdapter
+`BaseAdapter` es un clase abstracta la cual podemos implementar y crear adapters mucho más flexibles y que se adapten mejor a nuestras necesidades. 
+Cuando hacemos la implementación de un `BaseAdapter` debemos sobreescribir 4 métodos de manera obligatoria:
+
+ - getCount: Método en el que indicamos cuantos items serán representados mediante este adapter.
+ - getItem: Método que devuelve el item asociado a la posición especificada.
+ - getItemId: Devuelve el id del item asociado a la posición especificada.
+ - getView: Devuelve una vista que hará visible la data relacionada a la posición especificada. 
+
+Aquí veremos un ejemplo de una implementación
+
+```java
+public class BaseAdapterExample extends BaseAdapter {
+
+    private final List<String> mItems;
+    private final LayoutInflater mInflater;
+    private final Drawable starOn;
+
+    public BaseAdapterExample(Context context, List<String> items) {
+        mItems = items;
+        mInflater = LayoutInflater.from(context);
+        starOn = context.getResources().getDrawable(android.R.drawable.star_big_on);
+    }
+
+    @Override
+    public int getCount() {
+        return mItems.size();
+    }
+
+    @Override
+    public Object getItem(int position) {
+        return mItems.get(position);
+    }
+
+    @Override
+    public long getItemId(int position) {
+        return 0;
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        convertView = mInflater.inflate(R.layout.item_adapter, null);
+        TextView titleView = (TextView) convertView.findViewById(R.id.text);
+        titleView.setText(mItems.get(position));
+        final ImageView imageView = (ImageView) convertView.findViewById(R.id.itemImage);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                imageView.setImageDrawable(starOn);
+            }
+        });
+        return convertView;
+    }
+}
+
+```
+
+###Patrón View Holder
+Con el fin de mejorar el performance de nuestra `ListView` debemos modificar la implementación del método `getView` y añadirle el patrón View Holder el cual acelera considerablemente la creación de las vistas evitando el uso desmedido del método `findByView`. 
+
+####Definimos nuestro ViewHolder
+```java
+static class ViewHolder {
+    TextView textView;
+	ImageView imageView;
+}
+```
+
+####Modificamos nuestra implementación del `getView`
+```java
+@Override
+public View getView(int position, View convertView, ViewGroup parent) {
+	ViewHolder viewHolder;
+    if (convertView == null) {
+	    convertView = mInflater.inflate(R.layout.item_adapter, null);
+        viewHolder = new ViewHolder();
+        viewHolder.textView = (TextView) convertView.findViewById(R.id.text);
+		viewHolder.imageView = (ImageView) convertView.findViewById(R.id.itemImage);
+        convertView.setTag(viewHolder);
+	} else {
+	    viewHolder = (ViewHolder) convertView.getTag();
+    }
+    viewHolder.textView.setText(mItems.get(position));
+    .
+    .
+    .
+    .
+    return convertView;
+}
 ```
 
 ##Referencias
