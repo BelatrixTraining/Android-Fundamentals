@@ -48,7 +48,7 @@ public class ViewHolderExample extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder viewHolder;
         if (convertView == null) {
-            convertView = mInflater.inflate(R.layout.item_base_adapter, null);
+            convertView = mInflater.inflate(R.layout.item_adapter, null);
             viewHolder = new ViewHolder();
             viewHolder.textView = (TextView) convertView.findViewById(R.id.text);
             viewHolder.imageView = (ImageView) convertView.findViewById(R.id.itemImage);

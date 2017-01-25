@@ -46,7 +46,7 @@ public class BaseAdapterExample extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        convertView = mInflater.inflate(R.layout.item_base_adapter, null);
+        convertView = mInflater.inflate(R.layout.item_adapter, null);
         TextView titleView = (TextView) convertView.findViewById(R.id.text);
         titleView.setText(mItems.get(position));
         final ImageView imageView = (ImageView) convertView.findViewById(R.id.itemImage);
