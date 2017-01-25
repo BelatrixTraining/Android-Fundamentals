@@ -13,7 +13,7 @@
         <item>.baseadapter.BaseAdapterActivity</item>
         <item>.arrayAdapter.ArrayAdapterActivity</item>
         <item>.SimpleAdapterActivity</item>
-        <item>.CursorAdapterActivity</item>
+        <item>.cursoradapter.CursorAdapterActivity</item>
         <item>.viewholder.ViewHolderActivity</item>
         <item>.SpinnerAdapterActivity</item>
     </string-array>
