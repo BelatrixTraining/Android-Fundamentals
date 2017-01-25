@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Lesson5</string>
     <string name="baseAdapterTitle">Base Adapter</string>
+    <string name="viewHolderTitle">View Holder Example</string>
 </resources>

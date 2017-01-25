@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".baseadapter.BaseAdapterActivity"></activity>
+        <activity android:name=".viewholder.ViewHolderActivity"></activity>
     </application>
 
 </manifest>
