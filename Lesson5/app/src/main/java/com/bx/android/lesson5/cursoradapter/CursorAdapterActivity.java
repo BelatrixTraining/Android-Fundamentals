@@ -14,9 +14,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.bx.android.lesson5.R;
-import com.bx.android.lesson5.arrayAdapter.ArrayAdapterExample;
-
-import java.util.Arrays;
 
 /**
  * Created by pjohnson on 24/01/17.
@@ -25,7 +22,7 @@ import java.util.Arrays;
 public class CursorAdapterActivity extends AppCompatActivity {
 
     private static final int PERMISSIONS_REQUEST_READ_CONTACTS = 100;
-    private ListView arrayAdapterListView;
+    private ListView cursorAdapterListView;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -33,7 +30,8 @@ public class CursorAdapterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_adapter);
         View headerView = getLayoutInflater().inflate(R.layout.header_title, null);
         ((TextView) headerView.findViewById(R.id.headerTitle)).setText(R.string.cursorAdapterTitle);
-        arrayAdapterListView = (ListView) findViewById(R.id.listview);
+        cursorAdapterListView = (ListView) findViewById(R.id.listview);
+        cursorAdapterListView.addHeaderView(headerView);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M
                 && checkSelfPermission(Manifest.permission.READ_CONTACTS) != PackageManager.PERMISSION_GRANTED) {
             requestPermissions(new String[]{Manifest.permission.READ_CONTACTS}, PERMISSIONS_REQUEST_READ_CONTACTS);
@@ -46,7 +44,7 @@ public class CursorAdapterActivity extends AppCompatActivity {
     private void mostrarContactos() {
         ContentResolver cr = getContentResolver();
         Cursor cur = cr.query(ContactsContract.Contacts.CONTENT_URI, null, null, null, null);
-        arrayAdapterListView.setAdapter(new CursorAdapterExample(this, cur, true));
+        cursorAdapterListView.setAdapter(new CursorAdapterExample(this, cur, true));
     }
 
     @Override
