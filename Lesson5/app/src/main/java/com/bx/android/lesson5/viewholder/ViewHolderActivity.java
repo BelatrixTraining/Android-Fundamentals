@@ -8,7 +8,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.bx.android.lesson5.R;
-import com.bx.android.lesson5.baseadapter.BaseAdapterExample;
 
 import java.util.Arrays;
 
@@ -21,10 +20,10 @@ public class ViewHolderActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_base_adapter);
+        setContentView(R.layout.activity_adapter);
         View headerView = getLayoutInflater().inflate(R.layout.header_title, null);
         ((TextView)headerView.findViewById(R.id.headerTitle)).setText(R.string.viewHolderTitle);
-        ListView viewHolderListView = (ListView) findViewById(R.id.baseAdapterList);
+        ListView viewHolderListView = (ListView) findViewById(R.id.listview);
         viewHolderListView.addHeaderView(headerView);
         viewHolderListView.setAdapter(new ViewHolderExample(this, Arrays.asList(getResources().getStringArray(R.array.lorem))));
 

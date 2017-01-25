@@ -20,10 +20,10 @@ public class BaseAdapterActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_base_adapter);
+        setContentView(R.layout.activity_adapter);
         View headerView = getLayoutInflater().inflate(R.layout.header_title, null);
         ((TextView)headerView.findViewById(R.id.headerTitle)).setText(R.string.baseAdapterTitle);
-        ListView baseAdapterListView = (ListView) findViewById(R.id.baseAdapterList);
+        ListView baseAdapterListView = (ListView) findViewById(R.id.listview);
         baseAdapterListView.addHeaderView(headerView);
         baseAdapterListView.setAdapter(new BaseAdapterExample(this, Arrays.asList(getResources().getStringArray(R.array.lorem))));
 
