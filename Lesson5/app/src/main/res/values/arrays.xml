@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="examples">
+        <item>BaseAdapter</item>
+        <item>ArrayAdapter</item>
+        <item>SimpleAdapter</item>
+        <item>CursorAdapter</item>
+        <item>SpinnerAdapter</item>
+    </string-array>
+
+    <string-array name="activities">
+        <item>.BaseAdapterActivity</item>
+        <item>.ArrayAdapter</item>
+        <item>.SimpleAdapter</item>
+        <item>.CursorAdapter</item>
+        <item>.SpinnerAdapter</item>
+    </string-array>
+</resources>
