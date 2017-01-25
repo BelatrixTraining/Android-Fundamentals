@@ -6,7 +6,7 @@
         <item>SimpleAdapter</item>
         <item>CursorAdapter</item>
         <item>ViewHolder</item>
-        <item>SpinnerAdapter</item>
+        <item>Spinner</item>
     </string-array>
 
     <string-array name="activities">
@@ -15,7 +15,7 @@
         <item>.simpleadapter.SimpleAdapterActivity</item>
         <item>.cursoradapter.CursorAdapterActivity</item>
         <item>.viewholder.ViewHolderActivity</item>
-        <item>.SpinnerAdapterActivity</item>
+        <item>.spinner.SpinnerActivity</item>
     </string-array>
 
     <string-array name="lorem">
