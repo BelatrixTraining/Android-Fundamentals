@@ -38,10 +38,10 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        findViewById(R.id.btnViewHolder).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btnRecycler).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                gotoRecycler();
             }
         });
 
@@ -51,6 +51,21 @@ public class MainActivity extends AppCompatActivity {
                 gotoMoviewGrid();
             }
         });
+
+        findViewById(R.id.btnRecyclerEvents).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoRecyclerEvents();
+            }
+        });
+    }
+
+    private void gotoRecyclerEvents() {
+        startActivity(new Intent(this,RecyclerEventsActivity.class));
+    }
+
+    private void gotoRecycler() {
+        startActivity(new Intent(this,RecyclerActivity.class));
     }
 
     private void gotoMoviewGrid() {
@@ -68,4 +83,8 @@ public class MainActivity extends AppCompatActivity {
     private void gotoCustomList() {
         startActivity(new Intent(this,CustomListActivity.class));
     }
+
+
+    //Referencia
+    //https://github.com/chiuki/android-recyclerview
 }

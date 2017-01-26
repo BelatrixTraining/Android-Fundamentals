@@ -1,9 +1,11 @@
 package com.bx.android.model;
 
+import java.io.Serializable;
+
 /**
  * Created by Profesor on 27/10/2016.
  */
-public class MovieEntity {
+public class MovieEntity implements Serializable {
 
     private int id;
     private String title;
@@ -22,6 +24,18 @@ public class MovieEntity {
     public MovieEntity(String title, boolean cartelera) {
         this.title = title;
         this.cartelera = cartelera;
+    }
+
+    public MovieEntity(String title, String desc, boolean cartelera) {
+        this.title = title;
+        this.desc = desc;
+        this.cartelera = cartelera;
+    }
+
+    public MovieEntity(int id, String title, String desc) {
+        this.id = id;
+        this.title = title;
+        this.desc = desc;
     }
 
     public int getId() {

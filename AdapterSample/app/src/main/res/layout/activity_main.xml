@@ -30,14 +30,21 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ViewHolder Pattern"
+        android:text="Movie Grid"
         android:layout_marginBottom="5dp"
-        android:id="@+id/btnViewHolder"/>
+        android:id="@+id/btnMoviegrid"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Movie Grid"
+        android:text="RecyclerView"
         android:layout_marginBottom="5dp"
-        android:id="@+id/btnMoviegrid"/>
+        android:id="@+id/btnRecycler"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recycler Events "
+        android:layout_marginBottom="5dp"
+        android:id="@+id/btnRecyclerEvents"/>
 </LinearLayout>
