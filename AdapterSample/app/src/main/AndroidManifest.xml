@@ -9,11 +9,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-            <intent-filter>
+            <!--<intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filter>-->
         </activity>
         <activity android:name=".SimpleListActivity" />
         <activity android:name=".SimpleGridActivity" />
@@ -22,7 +22,14 @@
         <activity android:name=".RecyclerActivity" />
         <activity android:name=".RecyclerEventsActivity" />
         <activity android:name=".MovieDetailActivity" />
-        <activity android:name=".RecyclerMultipleActivity"></activity>
+        <activity android:name=".RecyclerMultipleActivity" />
+        <activity android:name=".RecetaActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
