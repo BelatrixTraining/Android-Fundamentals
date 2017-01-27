@@ -47,4 +47,11 @@
         android:text="Recycler Events "
         android:layout_marginBottom="5dp"
         android:id="@+id/btnRecyclerEvents"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recycler Type "
+        android:layout_marginBottom="5dp"
+        android:id="@+id/btnRecyclerTypes"/>
 </LinearLayout>

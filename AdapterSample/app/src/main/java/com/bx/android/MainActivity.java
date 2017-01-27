@@ -58,6 +58,17 @@ public class MainActivity extends AppCompatActivity {
                 gotoRecyclerEvents();
             }
         });
+
+        findViewById(R.id.btnRecyclerTypes).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoRecyclerTypes();
+            }
+        });
+    }
+
+    private void gotoRecyclerTypes() {
+        startActivity(new Intent(this,RecyclerMultipleActivity.class));
     }
 
     private void gotoRecyclerEvents() {

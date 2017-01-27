@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * Created by Profesor on 27/10/2016.
  */
-public class MovieEntity implements Serializable {
+public class MovieEntity extends TypeEntity implements Serializable  {
 
     private int id;
     private String title;
@@ -76,5 +76,10 @@ public class MovieEntity implements Serializable {
 
     public void setCartelera(boolean cartelera) {
         this.cartelera = cartelera;
+    }
+
+    @Override
+    public boolean isMovie() {
+        return true;
     }
 }
