@@ -55,6 +55,7 @@ public class RecyclerEventsActivity extends AppCompatActivity {
         mLayoutManager = new GridLayoutManager(this,2);
         rviewMovies.setLayoutManager(mLayoutManager);
 
+        //events
         rviewMovies.addOnItemTouchListener(new RecyclerTouchListener(this,
                 rviewMovies, new RecyclerTouchListener.ClickListener() {
             @Override

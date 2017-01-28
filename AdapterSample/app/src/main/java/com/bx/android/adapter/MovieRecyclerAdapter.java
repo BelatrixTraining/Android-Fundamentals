@@ -60,7 +60,11 @@ public class MovieRecyclerAdapter  extends RecyclerView.Adapter<MovieRecyclerAda
     public void onBindViewHolder(ViewHolder holder, int position) {
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
-        holder.tviTitle.setText(movies.get(position).getTitle());
+        MovieEntity movieEntity= movies.get(position);
+        int visibility= movieEntity.isCartelera()?(View.VISIBLE):View.GONE;
+
+        holder.tviTitle.setText(movieEntity.getTitle());
+        holder.iviCartelera.setVisibility(visibility);
     }
 
 

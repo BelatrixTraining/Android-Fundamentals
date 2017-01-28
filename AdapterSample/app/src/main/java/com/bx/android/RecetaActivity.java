@@ -1,10 +1,13 @@
 package com.bx.android;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.bx.android.adapter.RecetaAdapter;
 import com.bx.android.model.Receta;
@@ -41,16 +44,29 @@ public class RecetaActivity extends AppCompatActivity {
     private void ui() {
         lviReceta= (ListView) findViewById(R.id.lviReceta);
         //events
-        lviReceta.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        lviReceta.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-
+            public void onItemClick(AdapterView<?> adapterView,
+                                    View view, int position, long l) {
+                Receta receta= recetas.get(position);
+                if(receta!=null){
+                    gotoRecetaDetalle(receta);
+                }
             }
         });
+    }
+
+    private void gotoRecetaDetalle(Receta receta) {
+        Intent intent= new Intent(this,RecetaDetalleActivity.class);
+        Bundle bundle= new Bundle();
+        //bundle.putInt("ID",receta.getId());
+        //bundle.putString("TITLE",receta.getTitle());
+        bundle.putSerializable("RECETA",receta);
+        intent.putExtras(bundle);
+        //startActivity(intent);
+
+        Log.v("CONSOLE","receta "+receta );
+        Toast.makeText(this, "receta "+receta,
+                Toast.LENGTH_SHORT).show();
     }
 }

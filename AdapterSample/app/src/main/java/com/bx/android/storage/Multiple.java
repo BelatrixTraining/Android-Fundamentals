@@ -18,15 +18,15 @@ public class Multiple {
     public Multiple() {
         objects= new ArrayList<>();
         objects.add(new PlaceEntity(0,"Alcazar"));
+        objects.add(new MovieEntity("Batman",true));
         objects.add(new PlaceEntity(1,"Brasil"));
+        objects.add(new MovieEntity("LA REINA DE KATWE",false));
         objects.add(new PlaceEntity(2,"Centro"));
         objects.add(new PlaceEntity(2,"Centro Cívico"));
+        objects.add(new MovieEntity("Tiburón",false));
         objects.add(new PlaceEntity(2,"Guardia Cívil"));
         objects.add(new PlaceEntity(2,"Comas"));
-        objects.add(new MovieEntity("Batman",true));
         objects.add(new MovieEntity("Harry Potter",true));
-        objects.add(new MovieEntity("LA REINA DE KATWE",false));
-        objects.add(new MovieEntity("Tiburón",false));
         objects.add(new MovieEntity("UNA PAREJA DISPAREJA",true));
     }
 

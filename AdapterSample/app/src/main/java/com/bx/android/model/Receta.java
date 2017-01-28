@@ -1,10 +1,12 @@
 package com.bx.android.model;
 
+import java.io.Serializable;
+
 /**
  * Created by emedinaa on 27/01/17.
  */
 
-public class Receta {
+public class Receta implements Serializable{
 
     private int id;
     private String title;
@@ -63,5 +65,15 @@ public class Receta {
 
     public void setFavorite(boolean favorite) {
         this.favorite = favorite;
+    }
+
+    @Override
+    public String toString() {
+        return "Receta{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", desc='" + desc + '\'' +
+                ", favorite=" + favorite +
+                '}';
     }
 }

@@ -40,12 +40,21 @@ public class MovieDetailActivity extends AppCompatActivity {
     private void ui() {
         tviName= (TextView)findViewById(R.id.tviName);
         tviDesc= (TextView)findViewById(R.id.tviDesc);
+
     }
 
     private void extras() {
+        if (getIntent() != null && getIntent().getExtras() != null) {
+            Bundle bundle = getIntent().getExtras();
+            movieEntity = (MovieEntity) bundle.getSerializable("MOVIE");
+        }
+    }
+
+
+    /*private void extras() {
         if(getIntent()!=null && getIntent().getExtras()!=null){
             Bundle bundle= getIntent().getExtras();
             movieEntity= (MovieEntity) bundle.getSerializable("MOVIE");
         }
-    }
+    }*/
 }

@@ -62,8 +62,8 @@ public class RecetaAdapter extends BaseAdapter {
         //render asociar entidad con el row
         final Receta receta= recetas.get(position);
         if(receta!=null){
-            tviTitle.setText(receta.getTitle());
-            tviDesc.setText(receta.getDesc());
+            tviTitle.setText(checkNotNull(receta.getTitle()));
+            tviDesc.setText(checkNotNull(receta.getDesc()));
             if(receta.isFavorite()){
                 iviFavorite.setVisibility(View.VISIBLE);
             }else{
@@ -71,5 +71,15 @@ public class RecetaAdapter extends BaseAdapter {
             }
         }
         return  view;
+    }
+
+    private String checkNotNull(String value){
+        String string ;
+        if(value==null || value.isEmpty()){
+            string="";
+        }else{
+            string= value;
+        }
+        return  string;
     }
 }
