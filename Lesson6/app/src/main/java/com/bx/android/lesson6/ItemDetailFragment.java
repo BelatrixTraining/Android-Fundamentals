@@ -1,12 +1,15 @@
 package com.bx.android.lesson6;
 
 import android.app.Activity;
+import android.content.Context;
+import android.support.annotation.Nullable;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.bx.android.lesson6.dummy.DummyContentFactory;
@@ -30,11 +33,21 @@ public class ItemDetailFragment extends Fragment {
      */
     private DummyItem mItem;
 
+    FragmentInterface listener;
+
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
      * fragment (e.g. upon screen orientation changes).
      */
     public ItemDetailFragment() {
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        if (context instanceof FragmentInterface) {
+            this.listener = (FragmentInterface) context;
+        }
     }
 
     @Override
@@ -59,12 +72,34 @@ public class ItemDetailFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.item_detail, container, false);
+        return rootView;
+    }
 
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
         // Show the dummy content as text in a TextView.
         if (mItem != null) {
-            ((TextView) rootView.findViewById(R.id.item_detail)).setText(mItem.details);
+            ((TextView) view.findViewById(R.id.item_detail)).setText(mItem.details);
         }
+        Button button = (Button) view.findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                listener.setTextInTextView("Hola Mundo");
+            }
+        });
+    }
 
-        return rootView;
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        listener = null;
+    }
+
+    public interface FragmentInterface {
+        void doAction(String action);
+
+        void setTextInTextView(String message);
     }
 }

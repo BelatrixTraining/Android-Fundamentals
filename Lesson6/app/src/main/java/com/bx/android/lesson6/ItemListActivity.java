@@ -28,7 +28,7 @@ import java.util.List;
  * item details. On tablets, the activity presents the list of items and
  * item details side-by-side using two vertical panes.
  */
-public class ItemListActivity extends AppCompatActivity {
+public class ItemListActivity extends AppCompatActivity implements ItemDetailFragment.FragmentInterface {
 
     /**
      * Whether or not the activity is in two-pane mode, i.e. running on a tablet
@@ -45,39 +45,31 @@ public class ItemListActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         toolbar.setTitle(getTitle());
 
-        View recyclerView = findViewById(R.id.item_list);
-        assert recyclerView != null;
-        setupRecyclerView((RecyclerView) recyclerView);
-
-        if (findViewById(R.id.item_detail_container) != null) {
+        if (findViewById(R.id.detailContainer) != null) {
             // The detail container view will be present only in the
             // large-screen layouts (res/values-w900dp).
             // If this view is present, then the
             // activity should be in two-pane mode.
             mTwoPane = true;
         }
-    }
 
-    private void setupRecyclerView(@NonNull RecyclerView recyclerView) {
-        recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(DummyContentFactory.ITEMS, new SimpleItemRecyclerViewAdapter.RecycleViewListener() {
-            @Override
-            public void onItemClick(String id) {
-                if (mTwoPane) {
-                    Bundle arguments = new Bundle();
-                    arguments.putString(ItemDetailFragment.ARG_ITEM_ID, id);
-                    ItemDetailFragment fragment = new ItemDetailFragment();
-                    fragment.setArguments(arguments);
-                    getSupportFragmentManager().beginTransaction()
-                            .replace(R.id.item_detail_container, fragment)
-                            .commit();
-                } else {
-                    Intent intent = new Intent(ItemListActivity.this, ItemDetailActivity.class);
-                    intent.putExtra(ItemDetailFragment.ARG_ITEM_ID, id);
-                    startActivity(intent);
-                }
-            }
-        }));
+        Bundle bundle = new Bundle();
+        bundle.putBoolean("TWO_PANE", mTwoPane);
+        ListFragment listFragment = new ListFragment();
+        listFragment.setArguments(bundle);
+        getSupportFragmentManager().beginTransaction().replace(R.id.mainContainer, listFragment).commit();
     }
 
 
+    @Override
+    public void doAction(String action) {
+
+    }
+
+    @Override
+    public void setTextInTextView(String message) {
+        ListFragment listFragment = (ListFragment) getSupportFragmentManager().findFragmentById(R.id.mainContainer);
+        listFragment.setTextInTextView(message);
+
+    }
 }
