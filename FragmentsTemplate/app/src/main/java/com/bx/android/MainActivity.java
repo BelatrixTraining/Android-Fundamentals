@@ -18,5 +18,6 @@ public class MainActivity extends BaseActivity {
         //next(ColorActivity.class,null,true);
         //next(DynamicFragmentActivity.class,null,true);
         next(ContactsActivity.class,null,true);
+        //next(TabFragmentActivity.class,null,true);
     }
 }

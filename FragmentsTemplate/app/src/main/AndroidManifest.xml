@@ -11,8 +11,9 @@
         <activity
             android:name=".MessageActivity"
             android:screenOrientation="landscape" />
-        <activity android:name=".MainActivity"
-            android:screenOrientation="landscape" >
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,8 +22,12 @@
         </activity>
         <activity android:name=".ColorActivity" />
         <activity android:name=".DynamicFragmentActivity" />
-        <activity android:name=".ContactsActivity"
-            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".ContactsActivity"
+            android:screenOrientation="landscape" />
+
+        <activity android:name=".TabFragmentActivity"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
