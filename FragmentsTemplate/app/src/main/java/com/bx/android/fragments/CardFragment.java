@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -45,6 +46,9 @@ public class CardFragment extends Fragment {
     private int center;
     private float angle;
     private int startAngle;
+
+    private int windowWidth;
+    private int windowHeight;
 
     public CardFragment() {
         // Required empty public constructor
@@ -106,10 +110,8 @@ public class CardFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-
-        final int windowwidth = getActivity().getWindowManager().getDefaultDisplay().getWidth();
-        final int  windowH = getActivity().getWindowManager().getDefaultDisplay().getHeight();
-        center = windowwidth/2 ;
+        calculateDisplayDimentions();
+        center = windowWidth/2 ;
         startAngle= randombyRange(-5,5);
 
         getView().setRotation(startAngle);
@@ -129,7 +131,7 @@ public class CardFragment extends Fragment {
                         yCoord = (int) motionEvent.getRawY();
 
                         getView().setX(xCoord - center + 40);
-                        getView().setY(yCoord-windowH/2);
+                        getView().setY(yCoord-windowHeight/2);
 
                         if (xCoord >= center)
                         {
@@ -165,6 +167,13 @@ public class CardFragment extends Fragment {
         });
     }
 
+    private void calculateDisplayDimentions(){
+        DisplayMetrics metrics = new DisplayMetrics();
+        getActivity().getWindowManager().getDefaultDisplay().getMetrics(metrics);
+        windowWidth= metrics.widthPixels;
+        windowHeight= metrics.heightPixels;
+
+    }
     private int randombyRange(int min, int max){
 
         int range = max - min + 1;
