@@ -1,6 +1,5 @@
 package com.bx.android;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class MainActivity extends BaseActivity {
@@ -17,7 +16,8 @@ public class MainActivity extends BaseActivity {
         //next(MessageActivity.class,null,true);
         //next(ColorActivity.class,null,true);
         //next(DynamicFragmentActivity.class,null,true);
-        next(ContactsActivity.class,null,true);
+        //next(ContactsActivity.class,null,true);
         //next(TabFragmentActivity.class,null,true);
+        next(CardsActivity.class,null,true);
     }
 }
