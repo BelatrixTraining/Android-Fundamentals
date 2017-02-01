@@ -3,7 +3,7 @@ Android Fundamentals (20h)
      
 Lesson 6-2 : Fragments Fundamentos (4h)
 
-Ejercicios sobre fragments donde trataremos los siguientes puntos :
+### Ejemplos sobre fragments donde trataremos los siguientes puntos :
 
   * Agregar Fragments mediante XML
      
@@ -11,7 +11,8 @@ Ejercicios sobre fragments donde trataremos los siguientes puntos :
      
   * Comunicación entre Fragments 
      
- 
+### Ejemplos 
+
 - Ejemplo 1
 
 <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson6-2/images/screenshot_color.png" height="480">
