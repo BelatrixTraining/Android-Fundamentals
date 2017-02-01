@@ -35,7 +35,7 @@ En este ejemplo vamos a simular la navegación mediante tabs usando fragments
 
 - Ejemplo 5
 
-En este ejemplo vamos a agregar de una manera dinámica agregar y remover fragments
+En este ejemplo vamos a agregar y remover fragments dinámicamente.
 
 <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson6-2/images/screenshot_cards.png" height="480">
  
