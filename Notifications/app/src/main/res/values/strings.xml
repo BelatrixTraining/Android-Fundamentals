@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BxTemplate</string>
+    <string name="simple_notification">Notificación Simple</string>
+    <string name="notifications_button">Notificación con botones</string>
+    <string name="flags_notification">Notificación con flags</string>
+    <string name="notification_pending">Notificación con Pending Intent</string>
+    <string name="service_notiication">Notificación con servicio</string>
+</resources>
