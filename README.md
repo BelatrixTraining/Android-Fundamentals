@@ -1,46 +1,25 @@
 # Android-Fundamentals
-Android Fundamentals (20h)
+## Notificaciones
 
- - Lesson 1 , 2
-    
-    Fundamentos (4h)
-    
-    * Componentes de Android
+Es un mensaje que se puede mostrar en la barra superior o de estado. Para poder ver las notificaciones hay que hacer un drag de la barra de estado y estarán ahí.
 
-    * Activity, Services, Broadcast Receiver, Content Providers
-     
- - Lesson 3
- 
-    Android Studio (2h)
-    
-    * Gradle
+En la siguiente imagen, podemos apreciar los íconos de la barra de estado que estan relacionado a notificaciones:
 
-    * Android Studio
-  
- - Lesson 4, 4-2
- 
-    User Interface(4h)
- 
-    * Layout y Widgets
+<img src="https://developer.android.com/images/ui/notifications/notification_area.png"/>
 
-    * Eventos de Usuario
-    
- - Lesson 5, 5-2
-    
-    RecyclerView y Adapters (4h)
- 
-    * Basic Adapters
-    
-    * Custom Adapters
-    
- - Lesson 6, 6-2
-   
-   Fragments Fundamentos (3h)
- 
- - Lesson 7
-   
-   Notificaciones (2h)
- 
- - Lesson 8
-   
-   Presentaciòn de Proyectos I (1h)
+Mientras que en la siguiente, podemos verla desprendida:
+
+<img src="https://developer.android.com/images/ui/notifications/notification_drawer.png"/>
+
+Las notificaciones en android siempre han sido muy estándar:
+
+<img src="http://s3.amazonaws.com/digitaltrends-uploads-prod/2012/09/Android_Notifications.png"/>
+
+A partir de android L, material design agrego unas cuantas cosas más que mencionaremos mas adelante.
+
+
+
+## Referencias
+
+- https://developer.android.com/guide/topics/ui/notifiers/notifications.html
+- https://material.io/guidelines/patterns/notifications.html#notifications-anatomy-of-a-notification
